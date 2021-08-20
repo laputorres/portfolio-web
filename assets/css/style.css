@@ -1,0 +1,127 @@
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    background: #232323;
+    --primary-color: #EE6D4B;
+    --secundary-color: #706e6e;
+}
+
+
+/*///////////// HEADER //////////////// */
+
+header a{
+    color: rgba(255, 255, 255, 0.781) !important;
+    margin-right: 20px  ;
+
+
+
+}
+
+.navbar{
+    margin-left: 30% !important;
+}
+
+.navbar button{
+    color: var(--primary-color) !important;
+    background: var(--primary-color);
+}
+
+
+
+.menu-title{
+    color: var(--primary-color);
+    z-index: 10 !important;
+    
+}
+
+/* header h3{
+    display: flex;
+    font-weight: bold;
+    margin: -30% 0 0 5%;
+    font-size: 1000%;
+    text-shadow: -1px 0 rgba(255, 255, 255, 0.418), 0 1px rgba(255, 255, 255, 0.418), 1px 0 rgba(255, 255, 255, 0.418), 0 -1px rgba(255, 255, 255, 0.418);
+    transform: rotate(-15deg);
+    
+} */
+
+.col-text{
+    margin: 10% 0;
+}
+
+
+.menu-title .col-img:hover  {
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+box-shadow: 0 8px 32px 0 var(--primary-color);
+backdrop-filter: blur( 14px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+}
+
+
+
+
+.menu-title .col-text h1{
+    color: var(--secundary-color);
+}
+
+.menu-title .col-text h2{
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.menu-title .col-text h2 b{
+    color: #232323;
+    font-size: 200%;
+    
+    text-shadow: -1px 0 rgba(255, 255, 255, 0.418), 0 1px rgba(255, 255, 255, 0.418), 1px 0 rgba(255, 255, 255, 0.418), 0 -1px rgba(255, 255, 255, 0.418);
+}
+
+.menu-title .col-text h2 i{
+color: var(--primary-color);
+}
+
+.menu-title .col-text p {
+    color: #fff;
+    background: var(--primary-color);
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    margin-left: ;
+    box-shadow: 3px 4px 4px #fff;
+}
+
+#paralelogramo {
+    width: 1%; 
+    height: 30px; 
+    background: var(--primary-color);
+    -webkit-transform: skew(20deg); 
+    -moz-transform: skew(20deg); 
+    -o-transform: skew(20deg); 
+    margin:0 30px;
+ }
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width:600px) {
+    .navbar {
+        margin: 0 !important;
+    }
+
+    #paralelogramo{
+        display: none;
+    }
+ }
