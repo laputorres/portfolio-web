@@ -1,42 +1,47 @@
-
-
-
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     background: #232323;
     --primary-color: #EE6D4B;
     --secundary-color: #706e6e;
+    --background-color: #232323;
+    --background-color-secundary: #1d1c1c;
 }
 
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--primary-color);
+
+}
 
 /*///////////// HEADER //////////////// */
 
-header a{
+header a {
     color: rgba(255, 255, 255, 0.781) !important;
-    margin-right: 20px  ;
+    margin-right: 20px;
 
 
 
 }
 
-.navbar{
+.navbar {
     margin-left: 30% !important;
 }
 
-.navbar button{
+.navbar button {
     color: var(--primary-color) !important;
     background: var(--primary-color);
 }
 
 
 
-.menu-title{
+.menu-title {
     color: var(--primary-color);
     z-index: 10 !important;
-    
+
 }
 
 /* header h3{
@@ -49,42 +54,42 @@ header a{
     
 } */
 
-.col-text{
+.col-text {
     margin: 10% 0;
 }
 
 
-.menu-title .col-img:hover  {
+.menu-title .col-img:hover {
     content: "";
     background-size: contain;
     background-repeat: no-repeat;
-box-shadow: 0 8px 32px 0 var(--primary-color);
-backdrop-filter: blur( 14px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
+    box-shadow: 0 8px 32px 0 var(--primary-color);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
 }
 
 
 
 
-.menu-title .col-text h1{
+.menu-title .col-text h1 {
     color: var(--secundary-color);
 }
 
-.menu-title .col-text h2{
+.menu-title .col-text h2 {
     color: var(--primary-color);
     text-align: center;
 }
 
-.menu-title .col-text h2 b{
+.menu-title .col-text h2 b {
     color: #232323;
     font-size: 200%;
-    
+
     text-shadow: -1px 0 rgba(255, 255, 255, 0.418), 0 1px rgba(255, 255, 255, 0.418), 1px 0 rgba(255, 255, 255, 0.418), 0 -1px rgba(255, 255, 255, 0.418);
 }
 
-.menu-title .col-text h2 i{
-color: var(--primary-color);
+.menu-title .col-text h2 i {
+    color: var(--primary-color);
 }
 
 .menu-title .col-text p {
@@ -97,30 +102,30 @@ color: var(--primary-color);
 }
 
 #paralelogramo {
-    width: 1%; 
-    height: 30px; 
+    width: 1%;
+    height: 30px;
     background: var(--primary-color);
-    -webkit-transform: skew(20deg); 
-    -moz-transform: skew(20deg); 
-    -o-transform: skew(20deg); 
-    margin:0 30px;
- }
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    margin: 0 30px;
+}
 
 
+/* //////////// SOBRE MI //////////// */
 
+.container-about,
+.container-about .container,
+.container-about .container .row,
+.container-about .container .row .col, .container-about .container h1,
+.container-about .container .row .col h4,
+.container-about .container .row .col h3,
+.container-about .container .row .col p,
+.container-about .container .row .col h3 b {
 
+    background: var(--background-color-secundary);
+}
 
-
-
-
-
-
- @media only screen and (max-width:600px) {
-    .navbar {
-        margin: 0 !important;
-    }
-
-    #paralelogramo{
-        display: none;
-    }
- }
+.about-text {
+    color: var(--secundary-color);
+}
