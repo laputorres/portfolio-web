@@ -17,44 +17,46 @@
 <body>
 
     <header>
-        <div class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#"></a>
-            <div class="container-fluid">
 
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+        <!-- //////////////// MENU //////////////// -->
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid ">
+                
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav-bar nav">
-                        <div id="paralelogramo" class="forma"></div>
-                        <li class="nav-item px-2 mr-auto"><a href="#" class="nav-link">Inicio</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Sobre mí</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Proyectos</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Habilidades</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
-                        <div id="paralelogramo" class="forma"></div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                       
                     </ul>
-
                 </div>
             </div>
-
-        </div>
+        </nav>
 
         <div class="container">
             <div class="row menu-title ">
                 <div class="col col-text col-lg-6 col-sm-12 col-md-12">
                     <h1>Mi portafolio</h1>
-                    <h2>Soy <b>Desarrollador web<i>.</i></b></h2>
+                    <h2>Soy <b>Desarrollador web <i>.</i></b></h2>
                     <p>Contactame</p>
 
                 </div>
 
 
-                <!-- <div class="col col-img col-lg-4 m-auto px-0 col-sm-12 col-md-12">
-                   <img  src="./assets/img/profile2.jpg" alt="" width="100%">
-                </div> -->
+                <div class="col col-img col-lg-4  col-sm-12 col-md-12 m-auto p-0">
+                    <img class="m-auto" src="./assets/img/profile2.jpg" alt="" width="100%">
+                </div>
             </div>
         </div>
     </header>
@@ -62,45 +64,49 @@
 
     <!-- //////////// SOBRE MI ///////////////////// -->
     <section class="container-about">
-        <div class="container m-auto p-0">
-            <h1>Sobre mi</h1>
+
+        <div class="container m-auto ">
+            
             <div class="row">
-                <div class="col col-lg-6">
-                    <img src="./assets/img/profile2.jpg" alt="" width="50%"" height=" 70%">
+                <div class="col about-title col-lg-3">
+                    <h1>Sobre<b>mí</b></h1>
                 </div>
-                <div class="col col-lg-5">
+                <div class="col col-lg-4">
                     <h3>Mi nombre es <b>Abraham Torres</b></h3>
                     <p class="about-text"">soy alguien autodidacta que empezo como un hobby realizando paginas para mis proyectos, a la
                                 fecha
                                 tengo 3 años preparandome y trabajando como freelance experto en wordpress y Shopify y creando
                                 paginas desde cero.
-                                </p>
-                                <div class=" row">
-                        <div class="col col-lg-6">
-                            <h4>Nombre</h4>
-                            <p class="about-text">Abraham Torres</p>
-                        </div>
-                        <div class="col col-lg-6">
-                            <h4>Telefono</h4>
-                            <p class="about-text">4431715537</p>
-                        </div>
-                        <div class="col col-lg-6">
-                            <h4>Correo</h4>
-                            <p class="about-text">lapu.torres@gmail.com</p>
-                        </div>
-                        <div class="col col-lg-6">
-                            <h4>País</h4>
-                            <p class="about-text">México</p>
-                        </div>
-                        <div class="col">
-                            <img
-                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSIiIGQ9Ik00NDgsMEg2NEMyOC43MDQsMCwwLDI4LjcwNCwwLDY0djM4NGMwLDM1LjI5NiwyOC43MDQsNjQsNjQsNjRoMzg0YzM1LjI5NiwwLDY0LTI4LjcwNCw2NC02NFY2NCAgQzUxMiwyOC43MDQsNDgzLjI5NiwwLDQ0OCwweiIgZmlsbD0iI2VlNmQ0YiIgZGF0YS1vcmlnaW5hbD0iIzE5NzZkMiIgY2xhc3M9IiI+PC9wYXRoPgo8cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSIiIGQ9Ik00MzIsMjU2aC04MHYtNjRjMC0xNy42NjQsMTQuMzM2LTE2LDMyLTE2aDMyVjk2aC02NGwwLDBjLTUzLjAyNCwwLTk2LDQyLjk3Ni05Niw5NnY2NGgtNjR2ODBoNjQgIHYxNzZoOTZWMzM2aDQ4TDQzMiwyNTZ6IiBmaWxsPSIjNDE0MDQwIiBkYXRhLW9yaWdpbmFsPSIjZmFmYWZhIiBjbGFzcz0iIj48L3BhdGg+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" />
+                    </p>
+                </div>
+                <div class=" col col-lg-5">
+                        <div class=" row">
+                            <div class="col col-lg-6">
+                                <h4>Nombre</h4>
+                                <p class="about-text">Abraham Torres</p>
+                            </div>
+                            <div class="col col-lg-6">
+                                <h4>Telefono</h4>
+                                <p class="about-text">4431715537</p>
+                            </div>
+                            <div class="col col-lg-6">
+                                <h4>Correo</h4>
+                                <p class="about-text">lapu.torres@gmail.com</p>
+                            </div>
+                            <div class="col col-lg-6">
+                                <h4>País</h4>
+                                <p class="about-text">México</p>
+                            </div>
+                            <div class="col redes">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSIiIGQ9Ik00NDgsMEg2NEMyOC43MDQsMCwwLDI4LjcwNCwwLDY0djM4NGMwLDM1LjI5NiwyOC43MDQsNjQsNjQsNjRoMzg0YzM1LjI5NiwwLDY0LTI4LjcwNCw2NC02NFY2NCAgQzUxMiwyOC43MDQsNDgzLjI5NiwwLDQ0OCwweiIgZmlsbD0iI2VlNmQ0YiIgZGF0YS1vcmlnaW5hbD0iIzE5NzZkMiIgY2xhc3M9IiI+PC9wYXRoPgo8cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSIiIGQ9Ik00MzIsMjU2aC04MHYtNjRjMC0xNy42NjQsMTQuMzM2LTE2LDMyLTE2aDMyVjk2aC02NGwwLDBjLTUzLjAyNCwwLTk2LDQyLjk3Ni05Niw5NnY2NGgtNjR2ODBoNjQgIHYxNzZoOTZWMzM2aDQ4TDQzMiwyNTZ6IiBmaWxsPSIjNDE0MDQwIiBkYXRhLW9yaWdpbmFsPSIjZmFmYWZhIiBjbGFzcz0iIj48L3BhdGg+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4="
+                                    width="30px" />
+                            </div>
                         </div>
                 </div>
             </div>
-        </div>
 
-        </div>
+
+
 
     </section>
 
@@ -132,7 +138,7 @@
 </body>
 
 <!-- JavaScript Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
 </script>
 
