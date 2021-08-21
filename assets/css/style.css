@@ -79,24 +79,9 @@ header a {
     margin: 10% 0;
 }
 
-.menu-title .col-img {
-    transform: rotate(15deg);
-    margin-top: 15% !important;
-    
-}
 
-.menu-title .col-img img{
-    border-radius: 20px;
-   
-}
 
-.menu-title .col-img {
-    /* box-shadow: 0 8px 22px 0 var(--primary-color);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 20px; */
-    box-shadow: var(--primary-color) 0px 0px 0px 2px , #232323 10px -10px 0px -3px, var(--primary-color) 10px -10px, #232323 20px -20px 0px -3px, var(--primary-color) 20px -20px, #232323 30px -30px 0px -3px, var(--primary-color) 30px -30px, #232323 40px -40px 0px -3px, var(--primary-color) 40px -40px;
-}
+
 
 
 
@@ -144,6 +129,19 @@ header a {
 }
 
 
+
+/* .circulo{
+    display: flex;
+    width: 1000px;
+     height: 1000px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #5cb85c;
+} */
+
+
+
 /* //////////// SOBRE MI //////////// */
 
 /* .container-about,
@@ -161,7 +159,7 @@ header a {
 
 
 .container-about{
-    padding-top: 50vh;
+    
     height: 100vh;
 }
 
@@ -169,17 +167,31 @@ header a {
     height: 80vh;
 }
 
-.about-title{
-    height: 80vh;
-}
+
 
 .about-title h1{
-    transform: rotate(-90deg);
+   
     font-size: 15vh !important;
     width: 100%;
-    margin: 0 auto -100px 0 ;
-    padding:0;
+    
+    padding:10% 0;
     font-weight: 400;
+}
+
+.container-about .col-img {
+    box-shadow: 0 8px 22px 0 var(--primary-color);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 20px;
+    /* box-shadow: var(--primary-color) 0px 0px 0px 2px , #232323 10px -10px 0px -3px, var(--primary-color) 10px -10px, #232323 20px -20px 0px -3px, var(--primary-color) 20px -20px, #232323 30px -30px 0px -3px, var(--primary-color) 30px -30px, #232323 40px -40px 0px -3px, var(--primary-color) 40px -40px;
+   */ transform: rotate(-10deg);
+    padding: 10%;
+    
+}
+
+.container-about .col-img img{
+    border-radius: 20px !important;
+   
 }
 
 .about-text {
