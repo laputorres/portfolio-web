@@ -1,5 +1,3 @@
-
-
 /*////////////// FUENTES ///////////////// */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,600;1,900&display=swap');
 
@@ -15,12 +13,11 @@
 }
 
 
-h1
- {
+h1 {
     color: var(--primary-color);
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-weight: 400 ;
+    font-weight: 400;
 
 }
 
@@ -32,8 +29,8 @@ h4 {
     font-family: 'Playfair Display', serif;
 }
 
-p{
-font-size: 2vh;
+p {
+    font-size: 2vh;
 
 }
 
@@ -41,9 +38,9 @@ font-size: 2vh;
 
 /*///////////// HEADER //////////////// */
 
-header{
+header {
     height: 100vh;
-    
+
 }
 
 header a {
@@ -54,20 +51,20 @@ header a {
 
 }
 
-.navbar{
+.navbar {
     color: var(--secundary-color) !important;
     font-family: 'Playfair Display', serif;
-    
+
 }
 
-.navbar .container-fluid{
+.navbar .container-fluid {
     border-bottom: 1px solid var(--primary-color);
 }
 
 .navbar .container-fluid .navbar-toggler {
-  color: #EE6D4B;
-  
-    
+    color: #EE6D4B;
+
+
 }
 
 
@@ -123,39 +120,23 @@ header a {
     border-radius: 20px;
 }
 
-#paralelogramo {
-    width: 1%;
-    height: 30px;
-    background: var(--primary-color);
-    -webkit-transform: skew(20deg);
-    -moz-transform: skew(20deg);
-    -o-transform: skew(20deg);
-    margin: 0 10px;
-}
 
+
+/* //////// ARROW //////// */
 
 
 
 /* //////////// SOBRE MI //////////// */
 
-
-
-
-
-
-
-
-
-
 .about {
     color: var(--secundary-color);
-   
-    
+
+
 }
 
 
 
-.about h3{
+.about h3 {
     margin: 7vh 0;
 }
 
@@ -175,22 +156,22 @@ header a {
     color: var(--primary-color);
 }
 
-.about .row li  {
+.about .row li {
     list-style: none !important;
 }
 
 
-    /* box-shadow: var(--primary-color) 0px 0px 0px 2px , #232323 10px -10px 0px -3px, var(--primary-color) 10px -10px, #232323 20px -20px 0px -3px, var(--primary-color) 20px -20px, #232323 30px -30px 0px -3px, var(--primary-color) 30px -30px, #232323 40px -40px 0px -3px, var(--primary-color) 40px -40px;
-   */ 
+/* box-shadow: var(--primary-color) 0px 0px 0px 2px , #232323 10px -10px 0px -3px, var(--primary-color) 10px -10px, #232323 20px -20px 0px -3px, var(--primary-color) 20px -20px, #232323 30px -30px 0px -3px, var(--primary-color) 30px -30px, #232323 40px -40px 0px -3px, var(--primary-color) 40px -40px;
+   */
 
 
-   /* ///////////// SkILLS ////////////////// */
+/* ///////////// SkILLS ////////////////// */
 
 .conocimientos {
-color: var(--secundary-color);
-   }
+    color: var(--secundary-color);
+}
 
-   .resume .resume-item {
+.resume .resume-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
     border-left: 2px solid var(--primary-color);
@@ -237,4 +218,11 @@ color: var(--secundary-color);
     top: 0;
     background: #fff;
     border: 2px solid #1f5297;
+}
+
+
+/* ////////// Sobre mi botones /////////// */
+
+.bottons-skills {
+    color: var(--secundary-color);
 }
