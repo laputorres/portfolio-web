@@ -99,7 +99,7 @@ header a {
 
 .menu-title .col-text h2 b {
     color: #232323;
-    font-size: 300%;
+    font-size: 200%;
 
     text-shadow: -1px 0 rgba(255, 255, 255, 0.418), 0 1px rgba(255, 255, 255, 0.418), 1px 0 rgba(255, 255, 255, 0.418), 0 -1px rgba(255, 255, 255, 0.418);
 }
@@ -225,4 +225,8 @@ header a {
 
 .bottons-skills {
     color: var(--secundary-color);
+}
+
+.offcanvas-bottom{
+    height: 80%;
 }
