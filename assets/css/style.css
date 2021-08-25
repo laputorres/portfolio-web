@@ -1,16 +1,32 @@
-/*////////////// FUENTES ///////////////// */
+    /*////////////// FUENTES ///////////////// */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,600;1,900&display=swap');
 
 
 * {
     margin: 0;
     padding: 0;
-    background: #232323;
+    
     --primary-color: #EE6D4B;
     --secundary-color: #706e6e;
     --background-color: #232323;
     --background-color-secundary: #1d1c1c;
+    background: var(--background-color);
 }
+
+/* ////////// SCROLL BAR //////////// */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    }
+  
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--secundary-color);
+  }
 
 
 h1 {
@@ -43,29 +59,16 @@ header {
 
 }
 
-header a {
-    color: rgba(255, 255, 255, 0.781) !important;
-    margin-right: 20px;
 
 
-
-}
-
-.navbar {
-    color: var(--secundary-color) !important;
+.navbar button {
+    color: var(--primary-color);
     font-family: 'Playfair Display', serif;
 
 }
 
-.navbar .container-fluid {
-    border-bottom: 1px solid var(--primary-color);
-}
-
-.navbar .container-fluid .navbar-toggler {
-    color: #EE6D4B;
 
 
-}
 
 
 
@@ -136,33 +139,67 @@ header a {
 
 
 
-.about h3 {
-    margin: 7vh 0;
+.about h2 {
+    margin:0 0 7vh 0;
 }
 
 
 
-.about img {
-    width: 70%;
-    margin: 10%;
-    box-shadow: 0 8px 22px 0 var(--primary-color);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 20px;
-    transform: rotate(350deg);
+
+
+.about .about-img .img-fluid {
+   height: 70% !important;
+    width: 80%;
+    margin: 15%;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%); 
+    
 }
 
-.icofont-rounded-right {
-    color: var(--primary-color);
+
+
+.about .row .row .col,
+.about .row .row .col svg,
+.about .row .row .col p{
+    background: var(--background-color-secundary);
+    font-weight: bolder ;
 }
 
-.about .row li {
-    list-style: none !important;
+.about .row .row .col {
+    border-radius: 10%;
+    margin: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.about .row .row .col:hover {
+    filter: drop-shadow(0px 3px 8px var(--primary-color));
+}
+
+
+.about .row .col {
+ text-align: center;
 }
 
 
 /* box-shadow: var(--primary-color) 0px 0px 0px 2px , #232323 10px -10px 0px -3px, var(--primary-color) 10px -10px, #232323 20px -20px 0px -3px, var(--primary-color) 20px -20px, #232323 30px -30px 0px -3px, var(--primary-color) 30px -30px, #232323 40px -40px 0px -3px, var(--primary-color) 40px -40px;
    */
+
+
+/* /////////// SKILLS /////////// */
+
+.progress {
+    background: var(--secundary-color);
+}
+
+.progress-bar{
+    background: var(--primary-color);
+    
+}
+
+
+
+
+
 
 
 /* ///////////// SkILLS ////////////////// */
@@ -221,12 +258,5 @@ header a {
 }
 
 
-/* ////////// Sobre mi botones /////////// */
 
-.bottons-skills {
-    color: var(--secundary-color);
-}
 
-.offcanvas-bottom{
-    height: 80%;
-}
