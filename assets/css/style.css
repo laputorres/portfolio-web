@@ -10,7 +10,7 @@
     --secundary-color: #706e6e;
     --background-color: #232323;
     --background-color-secundary: #1d1c1c;
-    background: var(--background-color);
+    background: #4b4b4b;
 }
 
 
@@ -53,11 +53,12 @@ p {
 
 
 
+
 /*///////////// HEADER //////////////// */
 
 header {
     height: 100vh;
-
+background: url(../img/fondo1.jpgt);
 }
 
 
@@ -94,11 +95,16 @@ header {
 
 .offcanvas-body{
     background: var(--background-color);
-    margin: auto;
-    
+    margin: auto;    
 }
 
+.offcanvas-body a {
+    text-decoration: none;
+}
 
+.offcanvas-body a:hover{
+    color: var(--primary-color);
+}
 
 .btn-group-vertical{
     background: var(--background-color);
@@ -115,6 +121,18 @@ header {
 .navbar .container .offcanvas .offcanvas-body .btn-primary:hover {
     color: var(--primary-color);
    
+}
+
+.menu-redes {
+    margin: auto;
+}
+
+.menu-redes a svg {
+    fill: var(--secundary-color);
+}
+
+.menu-redes a svg:hover {
+    fill: var(--primary-color);
 }
 
 
@@ -160,8 +178,15 @@ header {
 
 .about {
     color: var(--secundary-color);
+    background: var(--background-color);
 
+}
 
+.about .container,
+.about .container .section-title,
+.about .container .section-title h2,
+.about .container .section-title p{
+    background: var(--background-color);
 }
 
 .about h2 {
@@ -221,11 +246,57 @@ header {
     
 }
 
+.about .row .row .col svg {
+fill: var(--secundary-color);
+}
+
+.about .row .row .col svg:hover {
+    fill: var(--primary-color);
+}
 
 
 
 
 
 
-/* ///////////// SkILLS ////////////////// */
+/* ///////////// CONTACTO ////////////////// */
+
+.contacto{
+    color: var(--primary-color);
+    list-style: none;
+   padding: 10% 0;
+}
+
+.contacto .redes-item a{
+    text-decoration: none;
+    display: flex;
+    margin: auto;
+}
+
+.contacto .redes-item a svg:hover {
+    fill: var(--primary-color);
+}
+
+
+.email-form{
+    
+}
+
+.email-form form {
+    margin: auto;
+padding:10%;
+background: rgba( 255, 255, 255, 0.10 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+   
+width: 100%;
+}
+
+.email-form form .form-row,
+.email-form form .form-row label{
+    background: none;
+}
 
