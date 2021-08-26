@@ -62,9 +62,8 @@ class TextScramble {
   // ——————————————————————————————————————————————————
   
   const phrases = [
-    'Desarrolador,',
+    'Desarrollador',
     'freelancer',
-    'Experto en Wordpress',
     'diseñador',
     'emprendedor',
   ]
@@ -84,6 +83,26 @@ class TextScramble {
 
 
  
+//
+// BRAND NAME ANIMATION
+//
+
+$ (function(){
+ var text = $(".text-name");
+ $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll <= 100) {
+        text.removeClass("hidden");
+    } else {
+        text.addClass("hidden");
+    }
+
+ });
+
+})
+
+
 
   //
   // TITLE ANIMATION
