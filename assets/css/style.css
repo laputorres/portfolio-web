@@ -1,16 +1,17 @@
     /*////////////// FUENTES ///////////////// */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,600;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 
 * {
     margin: 0;
     padding: 0;
-    
+    font-family: 'Amatic SC', cursive;
     --primary-color: #EE6D4B;
     --secundary-color: #706e6e;
     --background-color: #232323;
     --background-color-secundary: #1d1c1c;
-    background: #4b4b4b;
+
 }
 
 
@@ -43,30 +44,21 @@ h2,
 h3,
 h4 {
     color: var(--primary-color);
-    font-family: 'Playfair Display', serif;
+    font-family: 'Amatic SC', cursive;
 }
 
 p {
-    font-size: 2vh;
-
+    font-size: 5vh;
+    font-family: 'Amatic SC', cursive;
 }
 
-
-
-
-/*///////////// HEADER //////////////// */
-
-header {
-    height: 100vh;
-background: url(../img/fondo1.jpgt);
-}
 
 
 /* ///////// MENU /////// */
 
 .navbar{
     z-index: 100;
-    background: var(--background-color);
+    
 }
 
 .btn-primary,
@@ -90,7 +82,7 @@ background: url(../img/fondo1.jpgt);
    height: 50%;
    width: 30%;
    
-   border-radius: 10%;
+   border-bottom-left-radius: 10%;
 }
 
 .offcanvas-body{
@@ -107,7 +99,7 @@ background: url(../img/fondo1.jpgt);
 }
 
 .btn-group-vertical{
-    background: var(--background-color);
+    
     margin: auto !important;
     
 }
@@ -138,12 +130,28 @@ background: url(../img/fondo1.jpgt);
 
 
 /* //// BANER ////// */
+
+.background {
+    background: url(../img/fondo1.jpg);
+height: 110vh;
+}
+
+.blur {
+    background: rgb(194,194,194);
+    background: linear-gradient(180deg, rgba(194,194,194,0) 0%, rgba(35,35,35,1) 73%);
+    height: 150vh;
+}
+
 .menu-title {
     color: var(--primary-color);
-    z-index: 10 !important;
-    margin-top: 0;
-    padding-top: 15%;
+    background: none;
+    padding-top: 100px;
 
+}
+
+.background .blur .container .row .col {
+    background: rgba(35,35,35, 0) !important;
+    
 }
 
 .menu-title .col-text h1 {
@@ -156,9 +164,10 @@ background: url(../img/fondo1.jpgt);
 }
 
 #typed {
-    color: #232323;
-    font-size: 340%;
-    
+    color: var(--background-color);
+    font-size: 800%;
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
     text-shadow: -1px 0 rgba(255, 255, 255, 0.418), 0 1px rgba(255, 255, 255, 0.418), 1px 0 rgba(255, 255, 255, 0.418), 0 -1px rgba(255, 255, 255, 0.418);
 }
 
@@ -179,19 +188,20 @@ background: url(../img/fondo1.jpgt);
 .about {
     color: var(--secundary-color);
     background: var(--background-color);
+    margin-top: 10%;
 
 }
 
-.about .container,
-.about .container .section-title,
-.about .container .section-title h2,
-.about .container .section-title p{
-    background: var(--background-color);
+.section-title h2 {
+    margin: 50px auto;
+	text-align: center;
+	text-shadow: 0 0 5px rgba(172, 29, 29, 0.315);
+	color: var(--secundary-color);
+	opacity: 0.4;
+	font: 700 80px 'Bitter';
 }
 
-.about h2 {
-    margin:0 0 7vh 0;
-}
+
 
 .about .about-img .img-fluid {
    height: 70% !important;
