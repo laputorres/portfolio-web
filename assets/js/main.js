@@ -1,17 +1,6 @@
 
-  
-/* !(function($) {
-   
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 1000
-    });
-
-});
- */
-
 // ——————————————————————————————————————————————————
-// TextScramble
+// Texto banner
 // ——————————————————————————————————————————————————
 
 class TextScramble {
@@ -92,3 +81,23 @@ class TextScramble {
   }
   
   next()
+
+
+ 
+
+  //
+  // TITLE ANIMATION
+  //
+
+  $(function() {
+    var text = $(".text-title");
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+  
+      if (scroll >= 250) {
+        text.removeClass("hidden");
+      } else {
+        text.addClass("hidden");
+      }
+    });
+  });
