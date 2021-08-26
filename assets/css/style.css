@@ -176,8 +176,21 @@ height: 110vh;
 }
 
 
-
-
+.background .blur .container{
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.text {
+  font-weight:400; 
+  font-size: 100px;
+  color: #FAFAFA;
+}
+.dud {
+  color: var(--primary-color);
+}
 
 /* //////// ARROW //////// */
 
