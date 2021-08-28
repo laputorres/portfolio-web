@@ -450,7 +450,31 @@
 #content {
     height: 150vh !important;
     background: var(--background-color-secundary);
+   
 }
+
+#content h2 {
+    margin-top: 0;
+}
+
+#proyectos-filters {
+    list-style: none;
+    
+   
+    
+}
+
+#proyectos-filters li {
+    cursor:pointer ;
+    margin: 20% 0;
+    padding-right: 10%;
+    font-size: 200%;
+}
+
+
+
+
+
 
 #content .container .row .flipper .front img{
     width: 90%;
@@ -479,6 +503,8 @@
     text-align: center;
 }
 
+
+
 #content .container .row .flipper:hover {
     transform: rotateY(180deg);
 }
@@ -491,7 +517,7 @@
 
 .front, .back {
     backface-visibility: hidden;
-   position: absolute;
+   
     top: 0;
     left: 30px;
     height: 250px;
@@ -502,9 +528,10 @@
 .back {
     transform: rotateY(180deg);
     height: 250px;
+    margin-top: -220px;
 }
 
-
+ 
     /* ///////////// CONTACTO ////////////////// */
 
     .contacto {

@@ -12,18 +12,8 @@ document.querySelector(".menu").addEventListener("click", () => {
   }
 });
 
-
-
-
-
-
-
-
-
-
-
 // ——————————————————————————————————————————————————
-// Texto banner
+// TEXT BANNER TITLE
 // ——————————————————————————————————————————————————
 
 class TextScramble {
@@ -92,7 +82,7 @@ class TextScramble {
 }
 
 // ——————————————————————————————————————————————————
-// Texto
+// Text BANNER TITLE 
 // ——————————————————————————————————————————————————
 
 const phrases = [
@@ -117,9 +107,10 @@ next()
 
 
 
-//
+// ——————————————————————————————————————————————————
 // BRAND NAME ANIMATION
-//
+// ——————————————————————————————————————————————————
+
 
 $(function () {
   var text = $(".text-name");
@@ -138,6 +129,21 @@ $(function () {
 
 
 
-//
-// TITLE ANIMATION
-//
+// ——————————————————————————————————————————————————
+// LAYOUT PROYECTS
+// ——————————————————————————————————————————————————
+$(window).on('load', function () {
+  const proyectosIsotope = $('.proyectos-container').isotope({
+    itemSelector: '.proyectos-item',
+    layoutMode: 'fitRows'
+  });
+
+  $('#proyectos-filters li').on('click', function () {
+    $("#proyectos-filters li").removeClass('filter-active');
+    $(this).addClass('filter-active');
+    proyectosIsotope.isotope({
+      filter: $(this).data('filter')
+    });
+  });
+
+});
