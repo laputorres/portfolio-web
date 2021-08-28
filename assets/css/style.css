@@ -177,6 +177,192 @@
     }
 
 
+/* ///////// MENU BUTTON CUSTOM //////// */
+
+
+
+  /* main wrapper and its layout */
+  .wrapper {
+    width: 50px;
+    border-radius: 30px;
+    height: 50px;
+    background: white;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.281);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 5;
+    position: relative;
+  }
+  .item {
+    cursor: pointer;
+  }
+  .linee {
+    width: 20px;
+    height: 3px;
+    background: rgb(201, 198, 198);
+    margin-top: 3px;
+    border-radius: 0px;
+    transition: all 0.2s;
+  }
+  .linee1 {
+    width: 20px;
+    transform: translateX(5px);
+  }
+  .linee1::before {
+    content: "";
+    display: block;
+    transform: translateX(-5px);
+    width: 3px;
+    height: 3px;
+    background: rgb(201, 198, 198);
+    transition: width 0.2s ease 0.1s, transform 0.2s;
+  }
+  .linee3::after {
+    content: "";
+    display: block;
+    transform: translateX(17px);
+    width: 0px;
+    height: 3px;
+    background: rgb(201, 198, 198);
+    transition: width 0.2s ease 0.1s;
+  }
+  .linee3 {
+    width: 13px;
+  }
+  
+  
+  .nav-items {
+    width: 68px;
+    height: 28px;
+    background: rgb(246, 54, 54);
+    color: white;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.212);
+    transform: scale(0);
+    transition: transform 0.1s cubic-bezier(0.23, -0.47, 0.58, -0.63);
+  }
+  .nav-items:hover {
+    transform: scale(1.1);
+    transition-timing-function: 0.1s;
+  }
+  .items1 {
+    top: 0%;
+    left: -205%;
+  }
+  .items2 {
+    top: 80%;
+    left: -183%;
+    transition-delay: 0.1s;
+  }
+  .items3 {
+    top: 150%;
+    left: -93%;
+    transition-delay: 0.2s;
+  }
+  
+  .box {
+    width: 0%;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    height: 0px;
+    overflow: hidden;
+    background: white;
+    display: grid;
+    grid-gap: 10px;
+    transition: height 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  
+    z-index: 0;
+  }
+  .box-line {
+    width: 100px;
+    height: 10px;
+    background: rgb(201, 198, 198);
+    border-radius: 10px;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 0s;
+  }
+  .box-line:nth-child(even) {
+    width: 130px;
+  }
+  .effect {
+    z-index: 3;
+    border-radius: 50%;
+    width: 200vmax;
+    height: 200vmax;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: rgb(246, 54, 54);
+    transition: transform 0.4s;
+  }
+  /* toggle classes */
+  .box-show {
+    height: 150px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.226);
+    padding: 10px;
+    transition-duration:0.2s;
+  }
+  .box-line-show {
+    opacity: 1;
+    transition-duration:.1s;
+  }
+  
+  
+  .color {
+    background: rgb(246, 54, 54);
+  }
+  .show-menu {
+    transform: scale(1);
+    transition: transform 0.5s cubic-bezier(0.23, -0.47, 0.58, -0.63);
+  }
+  
+  
+  
+  
+  
+  /* hover effect */
+  .menu:hover .linee1 {
+    width: 10px;
+    transform: translateX(0px);
+  }
+  .menu:hover .linee1::before {
+    width: 0px;
+    transform: translateX(0px);
+  }
+  .menu:hover .linee3 {
+    width: 15px;
+  }
+  .menu:hover .linee3::after {
+    content: "";
+    display: block;
+    transform: translateX(17px);
+    width: 3px;
+    height: 3px;
+    background: rgb(201, 198, 198);
+    transition: width 0.2s ease 0.1s;
+  }
+  
+  
+  
+  
+/* ////////  END MENU BUTTON CUSTOM */
+
+
+
+
+
+
 
     /* //// BANER ////// */
 
@@ -237,25 +423,28 @@
 
     .about {
         color: var(--secundary-color);
-        background: rgb(3, 3, 3);
+        background: linear-gradient(0deg, rgba(33,33,33,1) 0%, #030303 100%);
+        width: 100%;
         margin-top: 10%;
         
         
 
     }
 
-    .about .background{
-        background: url(../img/profile2.jpg);
-        background-position: left;
-        backdrop-filter: 100;
-        background-size: contain;
-        background-repeat: no-repeat;
+    .about .fond{
+        background: url(../img/profile2-removebg-preview.png);
+       background-repeat: no-repeat;
+
+
     }
 
-    .about .background .blur {
-       
-background: linear-gradient(90deg, rgba(194,194,194,0) 0%, rgba(3,3,3,1) 50%);
-width: 100%;
+    .about .fond .blur {
+         
+    }
+
+
+    .about img {
+        
     }
 
     .section-title  {
@@ -267,10 +456,7 @@ width: 100%;
         text-align: justify;
     }
 
-    .about .background .blur .row {
-        width: 100%;
-    }
-
+    
 
     /* .about .about-img .img-fluid {
         height: 70% !important;
@@ -304,7 +490,7 @@ width: 100%;
 
     }
 
-    .about .row .col:hover {
+    .about .row .skill:hover {
         filter: drop-shadow(0px 3px 8px var(--primary-color));
     }
 
