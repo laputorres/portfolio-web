@@ -104,7 +104,7 @@
 
     .navbar {
         z-index: 100;
-        display: flex;
+        display:block;
     }
 
 
@@ -306,10 +306,13 @@
         height: 110vh;
     }
 
-    .blur {
+    .background__gradiant {
         background: rgb(194, 194, 194);
         background: linear-gradient(180deg, rgba(194, 194, 194, 0) 0%, rgb(3, 3, 3) 73%);
         height: 150vh;
+        width: 100%!important;
+        margin: 0;
+       
     }
 
 
@@ -333,6 +336,8 @@
         display: flex;
         text-align: center;
     }
+
+    /* text SOY DESARROLLADOR */
 
     .text {
         font-weight: 400;
@@ -637,8 +642,40 @@
     /* /END CONTACTO */
 
 
+    @media only screen and (max-width:756px) {
+        
+        .background .background__gradiant  {
+            padding-top: 120px;
+        }
 
+       
+    }
     
+/* ///////////////////MOBILES////////////////// */
+
+@media only screen and (max-width: 576px)   {
 
 
-    
+    .background .background__gradiant  {
+        padding-top: 100px;
+    }
+    .text {
+        font-weight: 400;
+        font-size: 400%;
+        color: #FAFAFA;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
